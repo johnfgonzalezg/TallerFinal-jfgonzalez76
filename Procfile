@@ -1,1 +1,1 @@
-web: gunicorn main:app
+flask init-db && gunicorn app:'create_app()'
