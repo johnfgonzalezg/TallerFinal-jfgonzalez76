@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Animales</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Animales</h1>
+        <form method="GET" action="{{ url_for('animals.cat') }}"> 
+            <button type="submit">Gato</button>
+        </form>
+        <form method="GET" action="{{ url_for('animals.dog') }}">
+            <button type="submit">Perro</button>
+        </form>
+        <form method="GET" action="{{ url_for('animals.boa_constrictor') }}">
+            <button type="submit">Boa Constrictor</button>
+        </form>
+        <form method="GET" action="{{ url_for('animals.ferret') }}">
+            <button type="submit">Hurón</button>
+        </form>
+    </div>
+</body>
